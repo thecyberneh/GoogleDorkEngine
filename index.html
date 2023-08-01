@@ -49,162 +49,157 @@
             case 10:
                 searchQuery += ' inurl:wp- | inurl:wp-content | inurl:plugins | inurl:uploads | inurl:themes | inurl:download';
                 break;
-            case 12:
+            case 11:
                 searchQuery += ' inurl:readme | inurl:license | inurl:install | inurl:setup | inurl:config';
                 break;
-            case 13:
+            case 12:
                 searchQuery += ' inurl:redir | inurl:url | inurl:redirect | inurl:return | inurl:src=http | inurl:r=http';
                 break;
-            case 14:
+            case 13:
                 searchQuery += ' ext:action | ext:struts | ext:do';
                 break;
-            case 17:
+            case 14:
                 var site = 'inurl:"/phpinfo.php" | inurl:".htaccess" | inurl:"/.git" ' + targetDomain + ' -github';
                 var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
                 window.open(url, '_blank');
                 return;
-            case 18:
+            case 15:
                 var site = 'site:*.' + targetDomain;
                 var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
                 window.open(url, '_blank');
                 return;
-            case 19:
+            case 16:
                 var site = 'site:*.*.' + targetDomain;
                 var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
                 window.open(url, '_blank');
                 return;
-            case 20:
+            case 17:
                 var site = 'inurl:wp-content | inurl:wp-includes ' + targetDomain;
                 var url = 'https://www.google.com/search?q=' + encodeURIComponent(site);
                 window.open(url, '_blank');
                 return;
-            case 22:
+            case 18:
                 var url = 'http://' + targetDomain + '/crossdomain.xml';
                 window.open(url, '_blank');
                 return;
-            case 23:
+            case 19:
                 var url = 'http://threatcrowd.org/domain.php?domain=' + targetDomain;
                 window.open(url, '_blank');
                 return;
-            case 28:
+            case 20:
                 var site = '.' + targetDomain;
                 var url = 'https://web.archive.org/web/*/(.' + encodeURIComponent(site) + ')';
                 window.open(url, '_blank');
                 return;
-            case 29:
-                var site = targetDomain;
-                var url = 'https://web.archive.org/web/*/' + encodeURIComponent(site) + '/*';
-                window.open(url, '_blank');
-                return;
-            case 30:
+            case 21:
                 var url = 'https://crt.sh/?q=%25.' + targetDomain;
                 window.open(url, '_blank');
                 return;
-            case 31:
+            case 22:
                 var site = targetDomain;
                 var url = 'https://www.openbugbounty.org/search/?search=' + encodeURIComponent(site) + '&type=host';
                 window.open(url, '_blank');
                 return;
-            case 33:
+            case 23:
                 var site = '+inurl:' + targetDomain + ' +ext:wp- | +inurl:' + targetDomain + ' +ext:wp-content';
                 var url = 'http://wwwb-dedup.us.archive.org:8083/cdx/search?url=' + encodeURIComponent(site) + '/&matchType=domain&collapse=digest&output=text&fl=original,timestamp&filter=urlkey:.*wp[-].*&limit=1000000&xx=';
                 window.open(url, '_blank');
                 return;
-            case 34:
+            case 24:
                 var url = 'https://censys.io/ipv4?q=' + targetDomain;
                 window.open(url, '_blank');
                 return;
-            case 35:
+            case 25:
                 var url = 'https://censys.io/domain?q=' + targetDomain;
                 window.open(url, '_blank');
                 return;
-            case 36:
+            case 26:
                 var url = 'https://censys.io/certificates?q=' + targetDomain;
                 window.open(url, '_blank');
                 return;
-            case 37:
+            case 27:
                 var url = 'https://www.shodan.io/search?query=' + targetDomain;
                 window.open(url, '_blank');
                 return;
-            case 38:
+            case 28:
                 searchQuery += ' inurl:"/geoserver/ows?service=wfs"';
                 break;
-            case 39:
+            case 29:
                 searchQuery += ' intext:"ArcGIS REST Services Directory" intitle:"Folder: /"';
                 break;
-            case 40:
+            case 30:
                 searchQuery += ' inurl:/wp-content/uploads/wpo_wcpdf';
                 break;
-            case 41:
+            case 31:
                 searchQuery += ' intitle:"index of "main.yml"';
                 break;
-            case 42:
+            case 32:
                 searchQuery += ' inurl:/admin.aspx'
                 break
-            case 43:
+            case 33:
                 searchQuery += ' inurl:/wp-content/uploads/wpo_wcpdf'
                 break
-            case 44:
+            case 34:
                 searchQuery += ' inurl:uploadimage.php'
                 break
-            case 45:
+            case 35:
                 searchQuery += ' inurl:*/wp-content/plugins/contact-form-7/'
                 break
-            case 46:
+            case 36:
                 searchQuery += ' intitle:index.of conf.php'
                 break
-            case 47:
+            case 37:
                 searchQuery += ' intitle:"Sharing API Info"'
                 break
-            case 48:
+            case 38:
                 searchQuery += ' intitle:"Index of" inurl:/backup/ "admin.zip"'
                 break
-            case 49:
+            case 39:
                 searchQuery += ' intitle:"index of" github-api'
                 break
-            case 50:
+            case 40:
                 searchQuery += ' inurl:wp-content/uploads/wcpa_uploads'
                 break
-            case 51:
+            case 41:
                 searchQuery += ' inurl:user intitle:"Drupal" intext:"Log in" -"powered by"'
                 break
-            case 52:
+            case 42:
                 searchQuery += ' inurl: /libraries/joomla/database/'
                 break
-            case 53:
+            case 43:
                 searchQuery += ' inurl:"php?sql=select" ext:php'
                 break
-            case 54:
+            case 44:
                 searchQuery += ' inurl:"wp-content" intitle:"index.of" intext:wp-config.php'
                 break
-            case 55 :
+            case 45 :
                 searchQuery += ' intext:"index of" inurl:json-rpc'
                 break
-            case 56 :
+            case 46 :
                 searchQuery += ' intitle:"index of" "download.php?file="'
                 break
-            case 57 :
+            case 47 :
                 searchQuery += ' intext:"index of" inurl:jwks-rsa'
                 break
-            case 58 :
+            case 48 :
                 searchQuery += ' inurl:"wp-content" intitle:"index.of" intext:backup"'
                 break
-            case 59 :
+            case 49 :
                 searchQuery += ' intitle:index.of conf.mysql'
                 break
-            case 60 :
+            case 50 :
                 searchQuery += ' intitle:"index of" "users.yml" | "admin.yml" | "config.yml"'
                 break
-            case 61 :
+            case 51 :
                 searchQuery += ' intitle:"index of" "docker-compose.yml"'
                 break
-            case 62 :
+            case 52 :
                 searchQuery += ' intext:pom.xml intitle:"index of /"'
                 break
-            case 63 :
+            case 53 :
                 searchQuery += ' intext:"Index of" intext:"/etc"'
                 break
-            case 64 :
+            case 54 :
                 searchQuery += ' "sql" "parent" intitle:index.of -injection'
                 break
             default:
