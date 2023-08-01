@@ -5,7 +5,6 @@ Introducing "Google Dork Engine" - your ultimate bug bounty tool! Discover vulne
 # Description for Dorks
 
 Dork 1:
-``test  ``
 ```intitle:index.of```
 
 Dork 2:
