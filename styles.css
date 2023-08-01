@@ -46,7 +46,8 @@ header {
 }
 
 .search-button{
-  margin-top: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   background-color: #363636; /* Dark button background color */
   border-radius: 4px;
   padding: 10px 20px;
@@ -55,6 +56,19 @@ header {
   transition: background-color 0.3s ease;
   color: #f2f2f2;
 },
+
+.search-button2{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  background-color: #363636; /* Dark button background color */
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #f2f2f2;
+},
+
 .feeling-lucky-button {
   background-color: #363636; /* Dark button background color */
   border-radius: 4px;
@@ -69,4 +83,3 @@ header {
 .feeling-lucky-button:hover {
   background-color: #5c5c5c; /* Dark hover background color */
 }
-
